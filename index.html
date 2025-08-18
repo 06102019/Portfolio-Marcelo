@@ -1,87 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Marcelo Veloso</title>
-    
-    <!-- Link para o CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Script JavaScript -->
-    <script defer src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Marcelo Veloso</title>
+  <meta name="description" content="Portfólio de Marcelo Veloso - Desenvolvedor iniciante em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia, segurança da informação e inovação.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- JS -->
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <h1>MARCELO VELOSO</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#ferramentas">Ferramentas</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>MARCELO VELOSO</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#ferramentas">Ferramentas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Conteúdo principal -->
+  <main>
     <!-- Seção Sobre Mim -->
     <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <div class="foto-perfil">
-            <img src="assets/img/marcelo_imagens_-removebg-preview.png" alt="Foto de Marcelo Veloso"
-                onmouseover="destacarFotoPerfil(this)" 
-                onmouseout="removerDestaqueFotoPerfil(this)">
-        </div>
-        <p>Sou um desenvolvedor iniciante, estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e em constante aprendizado.</p>
+      <h2>Sobre Mim</h2>
+      <div class="foto-perfil">
+        <img src="assets/img/marcelo_imagens_-removebg-preview.png" 
+             alt="Foto de Marcelo Veloso"
+             onmouseover="destacarFotoPerfil(this)" 
+             onmouseout="removerDestaqueFotoPerfil(this)">
+      </div>
+      <p>
+        "Sou um desenvolvedor iniciante,Cursando Superior em Análise e Desenvolvimento de Sistemas, 
+        apaixonado por tecnologia, cibersegurança e inovação. Sempre em busca de aprendizado contínuo, 
+        participo de projetos práticos e competições para aprimorar minhas habilidades." < >
+      </p>
     </section>
 
     <!-- Seção Projetos -->
     <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projetos-container">
-            <div class="projeto">
-                <img src="assets/img/PaginaRH.png" alt="Projeto Consultoria Genesys">
-                <p>Página web desenvolvida para a empresa de consultoria de RH Genesys.</p>
-                <a href="https://06102019.github.io/consultoria-genesys/" target="_blank"><button>Ver Site</button></a>
-            </div>
-            <div class="projeto">
-                <img src="assets/img/paginaPORTIFOLIO.png" alt="Projeto Portfólio">
-                <p>Portfólio pessoal desenvolvido com HTML, CSS e JavaScript.</p>
-                <a href="https://06102019.github.io/portifolio/" target="_blank"><button>Ver Site</button></a>
-            </div>
+      <h2>Projetos</h2>
+      <div class="projetos-container">
+
+        <!-- Projeto Genesys -->
+        <div class="projeto">
+          <img src="assets/img/PaginaRH.png" alt="Projeto Consultoria Genesys" loading="lazy">
+          <p>Página web desenvolvida para a empresa de consultoria de RH Genesys.</p>
+          <a href="https://06102019.github.io/consultoria-genesys/" target="_blank" rel="noopener noreferrer" class="btn">Ver Site</a>
         </div>
+
+        <!-- Projeto Portfólio -->
+        <div class="projeto">
+          <img src="assets/img/paginaPORTIFOLIO.png" alt="Projeto Portfólio" loading="lazy">
+          <p>Portfólio pessoal desenvolvido com HTML, CSS e JavaScript.</p>
+          <a href="https://06102019.github.io/portifolio/" target="_blank" rel="noopener noreferrer" class="btn">Ver Site</a>
+        </div>
+
+        <!-- Projeto Monitora.NET -->
+        <div class="projeto">
+          <img src="assets/img/Monitora.NET.jpg" alt="Projeto Monitora.NET" loading="lazy">
+          <p>Sistema de monitoramento de rede em Python (Scapy, Tkinter e OpenAI), com alertas de segurança e classificação de dispositivos.</p>
+        </div>
+
+        <!-- Scanner de Portas -->
+        <div class="projeto">
+          <img src="assets/img/Scanner-porta.png" alt="Projeto Scanner de Portas em Python" loading="lazy">
+          <p>Ferramenta em Python para escaneamento de portas TCP, usada para fins de aprendizado em segurança da informação.</p>
+        </div>
+
+        <!-- Hackathon Estácio 2025 -->
+        <div class="projeto destaque">
+          <img src="assets/img/Hackathon.jpg" alt="Hackathon Estácio 2025" loading="lazy">
+          <p>
+            Participação no <strong>Hackathon Estácio 2025</strong> – Desafio Capture The Flag (CTF).  
+            Flags capturadas: <code>user.txt</code> e <code>root.txt</code>, explorando vulnerabilidades em servidor Linux... Conquistei 3 colocado na classificação Final.
+          </p>
+        </div>
+
+        <!-- Hackathon Estácio 2025 -->
+        <div class="projeto destaque">
+          <img src="assets/img/mais projetos.png" alt="Metas 2025" loading="lazy">
+          <p>
+            Desenvolvendo...
+          </p>
+        </div>
+
+      </div>
     </section>
 
     <!-- Seção Ferramentas -->
     <section id="ferramentas">
-        <h2>Minhas Ferramentas</h2>
-        <div class="ferramentas-container">
-            <div class="ferramenta"><img src="assets/img/python.png" alt="Python"><p>Python</p></div>
-            <div class="ferramenta"><img src="assets/img/html.png" alt="HTML"><p>HTML</p></div>
-            <div class="ferramenta"><img src="assets/img/css-3.png" alt="CSS"><p>CSS</p></div>
-            <div class="ferramenta"><img src="assets/img/java.png" alt="Java"><p>Java</p></div>
-            <div class="ferramenta"><img src="assets/img/sql-server.png" alt="SQL"><p>SQL</p></div>
-            <div class="ferramenta"><img src="assets/img/git.png" alt="Git"><p>Git</p></div>
-        </div>
+      <h2>Minhas Ferramentas</h2>
+      <div class="ferramentas-container">
+        <!-- Dev -->
+        <div class="ferramenta"><img src="assets/img/python.png" alt="Python" loading="lazy"><p>Python</p></div>
+        <div class="ferramenta"><img src="assets/img/html.png" alt="HTML" loading="lazy"><p>HTML</p></div>
+        <div class="ferramenta"><img src="assets/img/css-3.png" alt="CSS" loading="lazy"><p>CSS</p></div>
+        <div class="ferramenta"><img src="assets/img/java.png" alt="Java" loading="lazy"><p>Java</p></div>
+        <div class="ferramenta"><img src="assets/img/sql-server.png" alt="SQL" loading="lazy"><p>SQL</p></div>
+        <div class="ferramenta"><img src="assets/img/git.png" alt="Git" loading="lazy"><p>Git</p></div>
+
+        <!-- Cybersecurity -->
+        <div class="ferramenta"><img src="assets/img/maquina-virtual.png" alt="VirtualBox" loading="lazy"><p>VirtualBox</p></div>
+        <div class="ferramenta"><img src="assets/img/linux.png" alt="Linux" loading="lazy"><p>Linux</p></div>
+        <div class="ferramenta"><img src="assets/img/so.png" alt="S.O" loading="lazy"><p>S.O</p></div>
+        <div class="ferramenta"><img src="assets/img/nmap.png" alt="Nmap" loading="lazy"><p>Nmap</p></div>
+      </div>
     </section>
 
     <!-- Seção Contato -->
     <section id="contato">
-        <h2>Contato</h2>
-        <div class="redes-sociais">
-            <a href="mailto:marceloveloso0610@gmail.com"><img src="assets/icons/mail.png" alt="Email"></a>
-            <a href="https://wa.me/5511976135572" target="_blank"><img src="assets/icons/whatsapp.png" alt="WhatsApp"></a>
-            <a href="https://www.linkedin.com/in/marcelo-fv" target="_blank"><img src="assets/icons/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://t.me/Marcelo_Elisangela" target="_blank"><img src="assets/icons/telegram.png" alt="Telegram"></a>
-            <a href="https://github.com/06102019" target="_blank"><img src="assets/icons/github.png" alt="GitHub"></a>
-        </div>
+      <h2>Contato</h2>
+      <div class="redes-sociais">
+        <a href="mailto:marceloveloso0610@gmail.com" aria-label="E-mail"><img src="assets/icons/mail.png" alt="Email" loading="lazy"></a>
+        <a href="https://wa.me/5511976135572" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img src="assets/icons/whatsapp.png" alt="WhatsApp" loading="lazy"></a>
+        <a href="https://www.linkedin.com/in/marcelo-fv" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icons/linkedin.png" alt="LinkedIn" loading="lazy"></a>
+        <a href="https://t.me/Marcelo_Elisangela" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img src="assets/icons/telegram.png" alt="Telegram" loading="lazy"></a>
+        <a href="https://github.com/06102019" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="assets/icons/github.png" alt="GitHub" loading="lazy"></a>
+      </div>
     </section>
+  </main>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Marcelo Veloso. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Marcelo Veloso. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
 
