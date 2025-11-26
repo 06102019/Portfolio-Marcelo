@@ -1,0 +1,63 @@
+/* ===== LAYOUT DO FORMULÁRIO ===== */
+.pagina-principal {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container-formulario {
+  max-width: 600px;
+  width: 100%;
+  margin: 24px auto;
+  padding: 24px;
+  text-align: center;
+}
+
+/* ===== FORMULÁRIO ===== */
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.formulario-contato label {
+  text-align: left;
+  color: var(--primaria);
+  font-weight: 600;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 255, 0.06);
+  background: var(--vidro);
+  color: var(--texto);
+  font-family: inherit;
+  resize: vertical;
+  width: 100%;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+  outline: none;
+  border-color: var(--primaria);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+/* ===== BOTÕES DO FORMULÁRIO ===== */
+.acoes-formulario {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.mensagem-status {
+  margin-top: 12px;
+  font-weight: 600;
+  min-height: 20px;
+}

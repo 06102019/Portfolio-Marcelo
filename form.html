@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contato - Marcelo Veloso</title>
+
+    <!-- Fontes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS organizado -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho-site">
+      <div class="marca"><h1>MARCELO VELOSO</h1></div>
+      <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">
+        ☰
+      </button>
+      <nav id="menuNavegacao" class="navegacao-site">
+        <a href="index.html" class="link-navegacao">Home</a>
+        <a href="blog.html" class="link-navegacao">Blog</a>
+        <a href="form.html" class="link-navegacao">Contato</a>
+      </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="pagina-principal">
+      <section class="container-formulario">
+        <h2>Entre em contato</h2>
+
+        <!-- FORMULÁRIO -->
+        <form
+          id="formularioContato"
+          class="formulario-contato"
+          autocomplete="off"
+        >
+          <label for="nome">Nome</label>
+          <input
+            id="nome"
+            name="nome"
+            type="text"
+            required
+            placeholder="Seu nome completo"
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="seu.email@exemplo.com"
+          />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="6"
+            required
+            placeholder="Digite sua mensagem aqui..."
+          ></textarea>
+
+          <!-- BOTÕES -->
+          <div class="acoes-formulario">
+            <button type="submit" class="botao">Enviar</button>
+            <button type="button" id="botaoLimpar" class="botao secundario">
+              Limpar
+            </button>
+          </div>
+
+          <!-- MENSAGEM DE STATUS -->
+          <p id="mensagemStatus" class="mensagem-status"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape-site">
+      <p>© 2025 Marcelo Veloso</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

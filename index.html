@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfólio - Marcelo Veloso</title>
+
+    <!-- Fontes e ícones -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- CSS organizado -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho-site">
+      <div class="marca"><h1>MARCELO VELOSO</h1></div>
+      <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">
+        ☰
+      </button>
+      <nav id="menuNavegacao" class="navegacao-site">
+        <a href="index.html" class="link-navegacao">Home</a>
+        <a href="blog.html" class="link-navegacao">Blog</a>
+        <a href="form.html" class="link-navegacao">Contato</a>
+      </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="principal">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="conteudo-hero">
+          <img src="img/avatar.png" alt="Avatar tech Marcelo" class="avatar" />
+          <div class="texto-hero">
+            <h2>
+              Sou Marcelo, apaixonado por tecnologia e por criar soluções que
+              melhoram a vida das pessoas.
+            </h2>
+            <p class="destaque">
+              Estudante de Análise e Desenvolvimento de Sistemas
+              <br />Trajetória focada em <strong>Cybersecurity</strong>
+              <br />Buscando atualização e aprendizado contínuo em novas
+              habilidades como
+              <span class="destaque-texto">ethical hacking</span>,
+              <span class="destaque-texto">gestão de riscos</span> e
+              <span class="destaque-texto">segurança em redes</span>
+            </p>
+            <div class="chamada-acao">
+              <a class="botao" href="form.html">Entrar em Contato</a>
+              <a class="botao secundario" href="blog.html">Ler o Blog</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO CONQUISTAS COM CARROSSEL -->
+      <section class="conquistas" id="conquistas">
+        <div class="container-secao">
+          <!-- Cabeçalho da seção -->
+          <div class="cabecalho-secao">
+            <h2 class="titulo-secao">Minhas Conquistas</h2>
+            <p class="descricao-secao">
+              Destaques e reconhecimentos na minha jornada profissional
+            </p>
+          </div>
+
+          <!-- Carrossel de Conquistas -->
+          <div
+            class="owl-carousel carrossel-conquistas"
+            id="carrosselConquistas"
+          >
+            <!-- Cartão 1: Hackathon -->
+            <div class="cartao-conquista">
+              <div class="imagem-conquista">
+                <img
+                  src="img/Hackathon.jpg"
+                  alt="Participação no Hackathon Estácio 2025"
+                />
+                <div class="badge-conquista">🏆 3º Lugar</div>
+              </div>
+              <div class="conteudo-conquista">
+                <h3 class="titulo-conquista">Premiação Hackathon</h3>
+                <div class="info-conquista">
+                  <span class="data-conquista">Fevereiro 2025</span>
+                  <span class="categoria-conquista">Competição</span>
+                </div>
+                <p class="descricao-conquista">
+                  Participação no Hackathon Estácio 2025 – Desafio Capture The
+                  Flag (CTF). Flags capturadas: user.txt e root.txt, explorando
+                  vulnerabilidades em servidor Linux.
+                </p>
+                <ul class="lista-detalhes">
+                  <li>Capture The Flag (CTF)</li>
+                  <li>Exploração de vulnerabilidades</li>
+                  <li>Servidor Linux</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Cartão 2: Bolsa Cisco -->
+            <div class="cartao-conquista">
+              <div class="imagem-conquista">
+                <img
+                  src="img/Bolsa_Cisco.png"
+                  alt="Programa CiberEducação Cisco Brasil"
+                />
+                <div class="badge-conquista">🎓 Bolsa</div>
+              </div>
+              <div class="conteudo-conquista">
+                <h3 class="titulo-conquista">Bolsa Cisco</h3>
+                <div class="info-conquista">
+                  <span class="data-conquista">2025</span>
+                  <span class="categoria-conquista">Capacitação</span>
+                </div>
+                <p class="descricao-conquista">
+                  Selecionado entre 45 mil alunos para o Programa CiberEducação
+                  Cisco Brasil. Cursos profissionalizantes em CCNA e CyberOps
+                  Associate.
+                </p>
+                <ul class="lista-detalhes">
+                  <li>CCNA - Focado em Redes</li>
+                  <li>
+                    CyberOps Associate - Preparação Para Centro de Operações
+                    (SOC)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Cartão 3: Imersão Vivo -->
+            <div class="cartao-conquista">
+              <div class="imagem-conquista">
+                <img
+                  src="img/vivo.png"
+                  alt="Imersão na Vivo - Programa de Capacitação"
+                />
+                <div class="badge-conquista">🚀 Imersão</div>
+              </div>
+              <div class="conteudo-conquista">
+                <h3 class="titulo-conquista">Imersão na Vivo</h3>
+                <div class="info-conquista">
+                  <span class="data-conquista">2025</span>
+                  <span class="categoria-conquista"
+                    >Experiência Corporativa</span
+                  >
+                </div>
+                <p class="descricao-conquista">
+                  Fui selecionado para vivenciar um dia imersivo na sede da
+                  Vivo, uma das maiores empresas de telecomunicações do Brasil.
+                  Uma oportunidade única de conhecer a cultura corporativa,
+                  processos inovadores e o ambiente de trabalho de referência no
+                  mercado.
+                </p>
+            
+                <ul class="lista-detalhes">
+                  <li>Visita à sede corporativa da Vivo</li>
+                  <li>Convivência com profissionais da área</li>
+                  <li>Conhecimento da cultura organizacional</li>
+                  <li>Networking com especialistas do setor</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles do Carrossel -->
+          <div class="controles-carrossel">
+            <button
+              class="controle-carrossel controle-anterior"
+              aria-label="Slide anterior"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="indicadores-carrossel" id="indicadoresConquistas"></div>
+            <button
+              class="controle-carrossel controle-proximo"
+              aria-label="Próximo slide"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO PROJETOS COM CARROSSEL -->
+      <section class="projetos" id="projetos">
+        <div class="container-secao">
+          <!-- Cabeçalho da seção -->
+          <div class="cabecalho-secao">
+            <h2 class="titulo-secao">Meus Projetos</h2>
+            <p class="descricao-secao">
+              Desenvolvimentos técnicos e soluções inovadoras
+            </p>
+          </div>
+
+          <!-- Carrossel de Projetos -->
+          <div class="owl-carousel carrossel-projetos" id="carrosselProjetos">
+            <!-- Projeto 1: Monitorador de Rede -->
+            <div class="cartao-projeto">
+              <div class="imagem-projeto">
+                <img
+                  src="img/Monitorador_Rede_Local.jpg"
+                  alt="Sistema Monitorador de Rede Local"
+                />
+                <div class="overlay-projeto">
+                  <span class="tecnologia-projeto">Python</span>
+                </div>
+              </div>
+              <div class="conteudo-projeto">
+                <h3 class="titulo-projeto">Monitorador Rede Local</h3>
+                <p class="descricao-projeto">
+                  Sistema de monitoramento de rede em Python com Scapy, Tkinter
+                  e OpenAI, com alertas de segurança e classificação de
+                  dispositivos.
+                </p>
+                <div class="tecnologias-projeto">
+                  <span class="tag-tecnologia">Python</span>
+                  <span class="tag-tecnologia">Scapy</span>
+                  <span class="tag-tecnologia">Tkinter</span>
+                </div>
+                <a
+                  href="https://06102019.github.io/monitorador-rede-local"
+                  target="_blank"
+                  class="botao botao-projeto"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Ver Projeto
+                </a>
+              </div>
+            </div>
+
+            <!-- Projeto 2: Consultoria RH -->
+            <div class="cartao-projeto">
+              <div class="imagem-projeto">
+                <img
+                  src="img/PaginaRH.png"
+                  alt="Página Consultoria de RH Genesys"
+                />
+                <div class="overlay-projeto">
+                  <span class="tecnologia-projeto">Web</span>
+                </div>
+              </div>
+              <div class="conteudo-projeto">
+                <h3 class="titulo-projeto">Consultoria de RH</h3>
+                <p class="descricao-projeto">
+                  Página web desenvolvida para a empresa de consultoria de RH
+                  Genesys, com design responsivo e moderno.
+                </p>
+                <div class="tecnologias-projeto">
+                  <span class="tag-tecnologia">HTML</span>
+                  <span class="tag-tecnologia">CSS</span>
+                  <span class="tag-tecnologia">JavaScript</span>
+                </div>
+                <a
+                  href="https://06102019.github.io/consultoria-genesys"
+                  target="_blank"
+                  class="botao botao-projeto"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Ver Projeto
+                </a>
+              </div>
+            </div>
+
+            <!-- Projeto 3: Scanner Portas -->
+            <div class="cartao-projeto">
+              <div class="imagem-projeto">
+                <img
+                  src="img/Scanner-porta.png"
+                  alt="Scanner de Portas TCP em Python"
+                />
+                <div class="overlay-projeto">
+                  <span class="tecnologia-projeto">Segurança</span>
+                </div>
+              </div>
+              <div class="conteudo-projeto">
+                <h3 class="titulo-projeto">Scanner de Portas TCP</h3>
+                <p class="descricao-projeto">
+                  Ferramenta em Python para escaneamento de portas TCP,
+                  desenvolvida para fins de aprendizado em segurança da
+                  informação.
+                </p>
+                <div class="tecnologias-projeto">
+                  <span class="tag-tecnologia">Python</span>
+                  <span class="tag-tecnologia">Sockets</span>
+                  <span class="tag-tecnologia">Segurança</span>
+                </div>
+                <a
+                  href="https://06102019.github.io/scanner-portas-tcp"
+                  target="_blank"
+                  class="botao botao-projeto"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Ver Projeto
+                </a>
+              </div>
+            </div>
+
+            
+            <!-- Projeto 4: Em Desenvolvimento -->
+            <div class="cartao-projeto">
+              <div class="imagem-projeto">
+                <img
+                  src="img/mais projetos.png"
+                  alt="Novos projetos em desenvolvimento"
+                />
+                <div class="overlay-projeto">
+                  <span class="tecnologia-projeto">Em Breve</span>
+                </div>
+              </div>
+              <div class="conteudo-projeto">
+                <h3 class="titulo-projeto">Em Desenvolvimento</h3>
+                <p class="descricao-projeto">
+                  Novos projetos e ideias inovadoras estão sendo desenvolvidos.
+                  Em busca de novos conhecimentos e desafios.
+                </p>
+                <div class="tecnologias-projeto">
+                  <span class="tag-tecnologia">Novas Techs</span>
+                  <span class="tag-tecnologia">Inovação</span>
+                </div>
+                <button class="botao botao-projeto botao-desativado">
+                  <i class="fas fa-clock"></i>
+                  Em Breve
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles do Carrossel -->
+          <div class="controles-carrossel">
+            <button
+              class="controle-carrossel controle-anterior"
+              aria-label="Slide anterior"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="indicadores-carrossel" id="indicadoresProjetos"></div>
+            <button
+              class="controle-carrossel controle-proximo"
+              aria-label="Próximo slide"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO HABILIDADES -->
+      <section class="habilidades">
+        <h2 class="titulo-secao">Habilidades</h2>
+        <div class="grade-habilidades">
+          <div class="item-habilidade">
+            <i class="fab fa-html5" title="HTML5"></i>
+          </div>
+          <div class="item-habilidade">
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+          </div>
+          <div class="item-habilidade">
+            <i class="fab fa-js-square" title="JavaScript"></i>
+          </div>
+          <div class="item-habilidade">
+            <i class="fab fa-python" title="Python"></i>
+          </div>
+          <div class="item-habilidade">
+            <i class="fas fa-database" title="SQL / Banco de Dados"></i>
+          </div>
+          <div class="item-habilidade">
+            <i class="fab fa-linux" title="Linux"></i>
+          </div>
+          <div class="item-habilidade">
+            <i class="fab fa-windows" title="Windows"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape-site">
+      <p>© 2025 Marcelo Veloso — Portfólio</p>
+      <div class="sociais">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a> ·
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </footer>
+
+    <!-- jQuery e Owl Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Scripts principais -->
+    <script src="js/main.js"></script>
+    <script src="js/carrossel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Blog - Conteúdos que me ajudaram</title>
+
+    <!-- Fontes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS organizado -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho-site">
+      <div class="marca"><h1>Conteúdos que me ajudaram</h1></div>
+      <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">
+        ☰
+      </button>
+      <nav id="menuNavegacao" class="navegacao-site">
+        <a href="index.html" class="link-navegacao">Home</a>
+        <a href="blog.html" class="link-navegacao">Blog</a>
+        <a href="form.html" class="link-navegacao">Contato</a>
+      </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="principal">
+      <!-- INTRODUÇÃO -->
+      <section class="introducao">
+        <h2>📘 Meu Diário de Aprendizado</h2>
+        <p>
+          Materiais, vídeos e guias que realmente me ajudaram — organizados por
+          tema para facilitar sua trilha de estudos.
+        </p>
+      </section>
+
+      <!-- CARDS DO BLOG -->
+      <section class="conteudo-blog">
+        <!-- LÓGICA DE PROGRAMAÇÃO -->
+        <article class="cartao-blog">
+          <h3>💡 Lógica de Programação</h3>
+          <p>
+            A base. Entenda variáveis, condições, loops e resolução de
+            problemas.
+          </p>
+          <div class="container-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8mei6uVttho?si=NqTY883TpxIZwLJG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a class="botao" href="pdfs/logica.pdf" download
+            >Baixar PDF - Lógica</a
+          >
+        </article>
+
+        <!-- HTML/CSS -->
+        <article class="cartao-blog">
+          <h3>🎨 HTML e CSS</h3>
+          <p>Estrutura e estilo: sem isso, não existe front bonitão.</p>
+          <div class="container-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=yBZFq7O5JwNKkFVh"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a class="botao" href="pdfs/html-css.pdf" download
+            >Baixar PDF - HTML & CSS</a
+          >
+        </article>
+
+        <!-- PYTHON -->
+        <article class="cartao-blog">
+          <h3>🐍 Python</h3>
+          <p>
+            Automação, scripts, protótipos e IA simples — Python resolve muito
+            problema rápido.
+          </p>
+          <div class="container-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/nJkVHusJp6E?si=6abeVtrWJbknZIs5"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a class="botao" href="pdfs/python.pdf" download
+            >Baixar PDF - Python</a
+          >
+        </article>
+
+        <!-- SQL -->
+        <article class="cartao-blog">
+          <h3>💾 SQL</h3>
+          <p>
+            Como persistir e consultar dados — essencial para qualquer app real.
+          </p>
+          <div class="container-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Ofktsne-utM?si=OFsdGWLIbnnYd0K7"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a class="botao" href="pdfs/sql.pdf" download>Baixar PDF - SQL</a>
+        </article>
+
+        <!-- INTELIGÊNCIA ARTIFICIAL -->
+        <article class="cartao-blog">
+          <h3>🤖 Inteligência Artificial</h3>
+          <p>
+            Introdução à IA e como usar APIs e bibliotecas pra criar soluções
+            inteligentes.
+          </p>
+          <div class="container-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/jQMbuK6URws?si=Ox6V1llEdFHjZ90M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a class="botao" href="pdfs/ia.pdf" download>Baixar PDF - IA</a>
+        </article>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape-site">
+      <p>© 2025 Marcelo Veloso | Blog de Aprendizado</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,456 @@
+/* ===== SEÇÃO HERÓI ===== */
+.hero {
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.conteudo-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== AVATAR ===== */
+.avatar {
+  width: 900px;
+  height: 500px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 3px solid var(--primaria);
+  box-shadow: 0 0 20px var(--primaria);
+  animation: pulsarBrilho 3s infinite ease-in-out;
+}
+
+@keyframes pulsarBrilho {
+  0%,
+  100% {
+    box-shadow: 0 0 15px var(--primaria);
+  }
+  50% {
+    box-shadow: 0 0 40px var(--primaria);
+  }
+}
+
+.texto-hero h2 {
+  color: var(--primaria);
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.destaque-texto {
+  color: var(--primaria);
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+.chamada-acao {
+  margin-top: 20px;
+}
+
+/* ===== SEÇÃO HABILIDADES ===== */
+.habilidades {
+  padding: 40px 20px;
+}
+
+.titulo-secao {
+  text-align: center;
+  color: var(--primaria);
+  margin: 36px 0 18px;
+  font-size: 1.1rem;
+}
+
+.grade-habilidades {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 18px;
+}
+
+.item-habilidade {
+  font-size: 3rem;
+  color: var(--primaria);
+  transition: transform 0.3s ease;
+}
+
+.item-habilidade:hover {
+  transform: scale(1.2);
+}
+
+/* ===== CONTAINER GERAL DAS SEÇÕES ===== */
+.container-secao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== CABEÇALHO DAS SEÇÕES ===== */
+.cabecalho-secao {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo-secao {
+  color: var(--primaria);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.descricao-secao {
+  color: var(--texto-secundario);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== SEÇÃO CONQUISTAS ===== */
+.conquistas {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Carrossel de Conquistas */
+.carrossel-conquistas {
+  position: relative;
+}
+
+.cartao-conquista {
+  background: var(--painel);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  margin: 20px 15px;
+  height: auto;
+}
+
+.cartao-conquista:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 255, 255, 0.2);
+  border-color: var(--primaria);
+}
+
+/* Imagem da Conquista */
+.imagem-conquista {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.imagem-conquista img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cartao-conquista:hover .imagem-conquista img {
+  transform: scale(1.05);
+}
+
+.badge-conquista {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, var(--primaria), var(--destaque));
+  color: var(--fundo);
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Conteúdo da Conquista */
+.conteudo-conquista {
+  padding: 25px;
+}
+
+.titulo-conquista {
+  color: var(--primaria);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-conquista {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.data-conquista,
+.categoria-conquista {
+  color: var(--texto-secundario);
+  font-size: 0.9rem;
+  background: rgba(0, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.descricao-conquista {
+  color: var(--texto);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.lista-detalhes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-detalhes li {
+  color: var(--texto-secundario);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+  position: relative;
+  padding-left: 20px;
+}
+
+.lista-detalhes li:before {
+  content: "▸";
+  color: var(--primaria);
+  position: absolute;
+  left: 0;
+}
+
+.lista-detalhes li:last-child {
+  border-bottom: none;
+}
+
+/* ===== SEÇÃO PROJETOS ===== */
+.projetos {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 255, 255, 0.05) 100%);
+}
+
+/* Carrossel de Projetos */
+.carrossel-projetos {
+  position: relative;
+}
+
+.cartao-projeto {
+  background: var(--painel);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  margin: 20px 15px;
+  height: auto;
+}
+
+.cartao-projeto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 255, 255, 0.2);
+  border-color: var(--primaria);
+}
+
+/* Imagem do Projeto */
+.imagem-projeto {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imagem-projeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cartao-projeto:hover .imagem-projeto img {
+  transform: scale(1.05);
+}
+
+.overlay-projeto {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 12px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.tecnologia-projeto {
+  color: var(--primaria);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Conteúdo do Projeto */
+.conteudo-projeto {
+  padding: 25px;
+  text-align: center;
+}
+
+.titulo-projeto {
+  color: var(--primaria);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.descricao-projeto {
+  color: var(--texto);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.tecnologias-projeto {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.tag-tecnologia {
+  background: rgba(0, 255, 255, 0.1);
+  color: var(--primaria);
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.botao-projeto {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--primaria), var(--destaque));
+  color: var(--fundo);
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.botao-projeto:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+}
+
+.botao-desativado {
+  background: var(--texto-secundario) !important;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.botao-desativado:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ===== CONTROLES DO CARROSSEL ===== */
+.controles-carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.controle-carrossel {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid var(--primaria);
+  color: var(--primaria);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.controle-carrossel:hover {
+  background: var(--primaria);
+  color: var(--fundo);
+  transform: scale(1.1);
+}
+
+.indicadores-carrossel {
+  display: flex;
+  gap: 10px;
+}
+
+.indicadores-carrossel .indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicadores-carrossel .indicador.ativo {
+  background: var(--primaria);
+  transform: scale(1.2);
+}
+
+/* ===== LINKS SOCIAIS ===== */
+.sociais a {
+  color: var(--primaria);
+  text-decoration: none;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.sociais a:hover {
+  text-shadow: 0 0 8px var(--destaque);
+}
+
+/* ===== ESTILOS OWL CAROUSEL PERSONALIZADOS ===== */
+.owl-carousel .owl-stage {
+  display: flex;
+  padding: 20px 0;
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+.owl-carousel .owl-nav {
+  display: none;
+}
+
+.owl-carousel .owl-dots {
+  display: none;
+}
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cartao-conquista,
+.cartao-projeto {
+  animation: surgir 0.6s ease-out;
+}

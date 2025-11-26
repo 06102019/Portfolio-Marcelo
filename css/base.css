@@ -1,0 +1,131 @@
+/* ===== VARIÁVEIS GLOBAIS E RESET ===== */
+:root {
+  --fundo: #0a0f1c;
+  --painel: #0f1724;
+  --primaria: #00ffff;
+  --destaque: #ff00ff;
+  --texto: #e0e0e0;
+  --texto-secundario: #9aa4b2;
+  --vidro: rgba(255, 255, 255, 0.02);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== CABEÇALHO COMPARTILHADO ===== */
+.cabecalho-site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 15, 28, 0.9),
+    rgba(14, 18, 36, 0.85)
+  );
+  border-bottom: 1px solid rgba(0, 255, 255, 0.06);
+  box-shadow: 0 6px 30px rgba(0, 255, 255, 0.03);
+  position: relative;
+  z-index: 1000;
+}
+
+.marca h1 {
+  color: var(--primaria);
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.12);
+  font-size: 1.05rem;
+}
+
+/* ===== NAVEGAÇÃO DESKTOP ===== */
+.navegacao-site {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.navegacao-site a {
+  color: var(--texto-secundario);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navegacao-site a:hover {
+  color: var(--texto);
+  text-shadow: 0 0 8px var(--destaque);
+  background: rgba(255, 0, 255, 0.02);
+}
+
+/* ===== MENU HAMBURGUER ===== */
+.botao-menu {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--primaria);
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1001;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.principal {
+  flex: 1;
+  padding: 20px 0;
+}
+
+/* ===== BOTÕES ===== */
+.botao {
+  display: inline-block;
+  background: var(--primaria);
+  color: var(--fundo);
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 10px;
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.06);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.botao.secundario {
+  background: transparent;
+  color: var(--primaria);
+  border: 1px solid rgba(0, 255, 255, 0.12);
+}
+
+.botao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 255, 255, 0.1);
+}
+
+/* ===== RODAPÉ ===== */
+.rodape-site {
+  text-align: center;
+  padding: 24px;
+  color: var(--texto-secundario);
+  border-top: 1px solid rgba(0, 255, 255, 0.03);
+  margin-top: 40px;
+}
